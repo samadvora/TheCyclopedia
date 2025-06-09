@@ -1,0 +1,444 @@
+/* content area css start */
+
+.chatbutton {
+    position: fixed;
+    bottom: 18px;
+    right: 22px;
+}
+
+.container1 {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+#wrapper ul {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.brand {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+main {
+    width: 100% !important;
+}
+
+.brand span {
+    color: #667b80;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+
+/* ------------------- */
+
+
+/* COMPANY INFORMATION */
+
+
+/* ------------------- */
+
+.company-info {
+    /* background: #C3C9DD; */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.company-Questions p {
+    color: #667b80;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    line-height: 1.75;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+.company-faqlink {
+    color: #667b80 !important;
+    font-weight: 100 !important;
+    line-height: 30px;
+    font-size: 17px;
+}
+
+
+/* ------- */
+
+
+/* CONTACT */
+
+
+/* ------- */
+
+.contact {
+    /* background: #dcdfea; */
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+li {
+    color: #4d4d4d !important;
+    font-weight: 100 !important;
+    line-height: 30px;
+    font-size: 17px;
+    width: 100%;
+}
+
+
+/* .adressinfo li {
+    width: auto;
+} */
+
+
+/* ---- */
+
+
+/* FORM */
+
+
+/* ---- */
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label {
+    display: block;
+    margin: 10px 0;
+    /* width: 100px; */
+    line-height: 31px;
+    text-align: left;
+    color: #667b80;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1em;
+    /* border: solid 1px #627EDC;
+    border-radius: 4px; */
+    border: none !important;
+    background-color: #edf0f2 !important;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form button {
+    background: #627EDC !important;
+    border: 0;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #3952a3;
+    color: #ffffff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    line-height: 1.5;
+    font-weight: 100;
+    border-bottom: 1px solid darkgray;
+}
+
+
+/* ------------- */
+
+
+/* MEDIA QUERIES */
+
+
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper>* {
+        padding: 2em;
+    }
+    .company-info {
+        border-radius: 4px 0 0 4px;
+    }
+    .contact {
+        border-radius: 0 4px 4px 0;
+    }
+    .company-info h3,
+    .company-info ul,
+    .brand {
+        /* text-align: left; */
+        text-align: center;
+        margin-top: 18px;
+    }
+}
+
+
+/* content area css end */
+
+
+/* Social Media Icons */
+
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+    display: inline;
+}
+
+.social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
+}
+
+.copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, .6);
+}
+
+@media screen and (max-width: 850px) {
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .social-media-list {
+        left: 0;
+    }
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+@media (max-width:768px) {
+    .contact form {
+        display: block;
+        text-align: center;
+    }
+}
+
+.open-button {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    bottom: 215px;
+    right: 11px;
+    width: auto;
+    margin-left: 1213px;
+}
+
+
+/* The popup chat - hidden by default */
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+/* Full-width textarea */
+
+.form-container textarea {
+    width: 100%;
+    /* padding: 15px; */
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+
+/* When the textarea gets focus, do something */
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/send button */
+
+.form-container .btn {
+    background-color: #627EDC;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    margin-left: 0;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: #627EDC;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.hamburger.contactus {
+    margin-top: 10px;
+}
+
+
+/* hover-submit 1 css */
+
+#contactsubmit {
+    background-color: #292c2f !important;
+    color: white;
+}
+
+input.hover-center-1 {
+    /* background-image: linear-gradient(0, #0A3D5B, #0A3D5B); */
+    background-image: linear-gradient(0, rgb(162, 83, 31), rgb(162, 83, 31));
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+input.hover-center-1:hover {
+    background-size: 100%;
+    color: #fff;
+}
+
+
+/*submit button end*/

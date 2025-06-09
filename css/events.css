@@ -1,0 +1,418 @@
+/* The Modal (background) */
+* {
+  font-size: 16px;
+}
+/* Plugin CSS*/
+#noevent {
+  width: 100% !important;
+  text-align: center;
+  background-color: #a0a0a0 !important;
+  font-size: 40px !important;
+}
+/* Navigation CSS */
+.active {
+  background-color: #a0a0a0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  
+}
+
+h1{
+  font: normal 50px 'Cookie', cursive !important;
+  font-size: 35px;
+}
+
+h1 span {
+  color: rgb(162, 83, 31);
+  font-size: 50px;
+}
+
+li {
+  width: 25%;
+}
+
+li a {
+  font-size: 23px;
+  display: block;
+  color: #242223;
+  
+  text-align: center;
+  text-decoration: none;
+}
+li a:active {
+  color: #bdbdbd;
+  padding: 20px 0;
+  background-color: #111;
+}
+li a:hover {
+  padding: 20px 0;
+  color: #bdbdbd;
+  background-color: #111;
+}
+ 
+
+/* Navigation CSS */
+
+/* #goback {
+  position: relative;
+  top:0;
+  left:45%;
+  font-size: x-large;
+  background-color: #242223;
+  color: #fefefe;
+  border: 2px solid rgb(162, 83, 31);
+} */
+.hide {
+  display: none !important;
+}
+
+#myModal {
+  position: fixed; /* Stay in place */
+  z-index: 0; /* Sit on top */
+  left: 0;
+  top: -100%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: flex;
+  align-items:flex-start;
+}
+/* Modal Content/Box */
+#events, #form{
+  width: 40%;
+  height: 60%;
+  margin: 15% auto; /* 15% from the top and centered */
+  background-color: #fefefe;
+  border-radius: 25px;
+  border: 1px solid #dc5b24;
+}
+#events {
+  position: fixed;
+  left: -100vw;
+  font-size: 1rem;
+  background-color: #fefefe;
+  color: #242223;
+  display: grid;
+  grid-template-areas: "head"
+                        "content"
+                        "submit";
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 100%;
+  place-items: center;
+}
+#form{
+  position: fixed;
+  right: -100vw;
+  background-color: #242223;
+  color: #fefefe;
+  display: grid;
+  grid-template-areas: "head"
+                        "content"
+                        "submit";
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 100%;
+  place-items: center;
+}
+
+#eventslist {
+  padding: 20px;
+  border: 1px solid #dc5b24;
+  box-shadow: 1px 1px #dc5b24;
+}
+h2 {
+  grid-area: head;
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 10%;
+  padding: 10px;
+  font-size: larger;
+  text-align: center;
+  place-self: center;
+  background-color: rgb(162, 83, 31);
+}
+.modal-content {
+  grid-area: content;
+  padding-top: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  
+}
+input[type="text"], select{
+  width: 100%;
+  padding: 5px;
+  color: #171717;
+  background-color: #fefefe;
+  border-radius: 15px;
+}
+label{
+  font-size: larger;
+}
+a{
+  font-size: large;
+  color: #fefefe;
+}
+label a:hover {
+  transform: skew(10deg) !important; 
+  font-size: x-large;
+  color: #fefefe;
+}
+
+
+input[type="button"]{
+  width: fit-content;
+  font-size: x-large;
+  grid-area: submit;
+  padding: 0 10px;
+  margin: 5% 0;
+  background-color: rgb(162, 83, 31);
+  color: #fefefe;
+  border-radius: 25px;
+  box-shadow: 1px 1px #dc5b24;
+}
+  /* The Close Button */
+  .close {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    font-size: 4rem;
+    color: rgb(72, 70, 70);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*BUTTON*/
+#plus {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+}
+
+div[class*=box] {
+	height: 100%;
+	width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-2 { 
+  background-color: #3C3C3C; 
+}
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.btn-two {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;	
+}
+.btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 80%;
+	height: 100%;
+  font-size: larger;
+}
+.btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 80%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 2px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.1);
+}
+.btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 80%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 2px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-90deg);
+  background-color: #000;
+  height: 100%;
+}
+.btn-two:hover::after {
+/*   transform: rotate(45deg); */
+  background-color: #000;
+  height: 100%;
+}
+
+/* Footer CSS */
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  
+  padding: 55px 50px;
+  margin-top: 80px;
+ }
+  
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+ }
+  
+ .footer-distributed .footer-left{
+  width: 40%;
+ }
+  
+ .footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive !important;
+  margin: 0;
+ }
+  
+ .footer-distributed h3 span{
+
+  font: normal 36px 'Cookie', cursive !important;
+  color:  rgb(162, 83, 31);
+ }
+  
+  
+ .footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+ }
+  
+ .footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+ }
+  
+ .footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+  
+ .footer-distributed .footer-center{
+  width: 35%;
+ }
+  
+ .footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+ }
+  
+ .footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+ }
+  
+ .footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+ }
+  
+ .footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+ }
+  
+ .footer-distributed .footer-center p a{
+  color:  rgb(162, 83, 31);
+  text-decoration: none;;
+ }
+  
+ .footer-distributed .footer-right{
+  width: 20%;
+ }
+  
+ .footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+ .footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+ }
+  
+ .footer-distributed .footer-icons{
+  margin-top: 25px;
+ }
+  
+ .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  
+  margin-right: 3px;
+  margin-bottom: 5px;
+ }
+

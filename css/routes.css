@@ -1,0 +1,195 @@
+ .routesWrapper {
+    display: block;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 768px;
+    max-width: 1483px;
+    margin-top: 45px;
+ }
+
+.routesCard {
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px 600px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.356);
+    margin-bottom: 30px;
+  }
+  .routesCard img {
+    width: 300px;
+    height: 340px;
+    border-radius: 5px 0 0 5px;
+  }
+  .routesCard .btn {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: #fc9400;
+    color: #fff;
+    padding: 22px 45px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+  }
+  .routesCard .btn i {
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .routesCard__text {
+    padding: 0px 40px 0;
+  }
+  .routesCard__text h1 {
+    color: #351897;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .routesCard__text .routesCard__text__star span {
+    font-size: 0.8rem;
+    color: #ffa800;
+    margin: -5px 0 20px;
+  }
+  .routesCard__text p {
+    font-size: 0.9rem;
+  }
+  .routesCard__text .routesCard__text__timing {
+    display: flex;
+    margin: 20px 0 10px;
+  }
+  .routesCard__text .routesCard__text__timing .routesCard__text__timing_time {
+    margin-right: 40px;
+  }
+  .routesCard__text .routesCard__text__timing h2 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #818189;
+  }
+  .routesCard__text .routesCard__text__timing p {
+    color: #351897;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+
+  .routeModal {
+    position: fixed;
+    z-index: 10000; /* 1 */
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.routeModal.is-visible {
+    visibility: visible;
+}
+
+.routeModal-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.routeModal.is-visible .routeModal-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.routeModal-wrapper {
+  position: absolute;
+  z-index: 9999;
+  top: 6em;
+  left: 42%;
+  width: 45em;
+  margin-left: -16em;
+  background-color: #fff;
+  box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+}
+
+.routeModal-transition {
+  transition: all 0.3s 0.12s;
+  transform: translateY(-10%);
+  opacity: 0;
+}
+
+.routeModal.is-visible .routeModal-transition {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.routeModal-header,
+.routeModal-content {
+  padding: 1em;
+}
+
+.routeModal-header {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.routeModal-close {
+  position: absolute;
+  top: 3px;
+  right: -75px;
+  padding: 1em;
+  color: #aaa;
+  background: none;
+  border: 0;
+}
+
+.routeModal-close:hover {
+  color: #777;
+}
+
+.routeModal-heading {
+  font-size: 1.125em;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.routeModal-content > *:first-child {
+  margin-top: 0;
+}
+
+.routeModal-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.popupbtn {
+    position: absolute;
+    bottom: 50px;
+    width: 20%;
+    right: 65px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#modelFrame {
+    border: 0;
+    width: 100%;
+    min-height: 410px;
+}
