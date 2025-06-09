@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <title>Java Script Group Project</title>
+  <link rel="stylesheet" href="css/bikes.css" />
+</head>
+<body>
+<nav>
+        <ul>
+            <li><a href="index.html">GALLERY</a></li>
+            <li><a href="Bikes.html">BIKES</a></li>
+            <li>
+                <a href="index.html">
+                    <h1>The<span>Cyclopedia</span></h1>
+                </a>
+            </li>
+            <li><a href="Contactus.html">CONTACT US</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <main>
+    <div id="buttons"></div>
+
+    <div id="gallery">
+  
+      <img src="images/gallery2.1.webp" data-tags="Rohloff" alt="Alt 1" />
+  
+      <img src="images/gallery2.2.webp" data-tags="Pinion" alt="Alt 2" />
+
+        <img src="images/gallery2.3.webp" data-tags="Ss/Alfline" alt="Alt 3" />
+
+        <img src="images/gallery2.4.webp"  data-tags="Rohloff" alt="Alt 4" />
+        <img src="images/gallery2.5.webp" data-tags="Pinion" alt="Alt 5" />
+
+        <img src="images/gallery2.6.webp" data-tags="Ss/Alfline" alt="Alt 6" />
+    </div>
+  </main>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>The<span>Cyclopedia</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a> ·
+                <a href="#">Bikes</a> ·
+                <a href="#">Frame & More</a> ·
+                <a href="#">Gallery</a>
+            </p>
+            <p class="footer-company-name">The Cyclopedia. &copy; 2021</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>05 Briercrest Ave</span> Ontario, Canada</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 555555</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:TheCyclopedia.com">TheCyclopedia.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script >
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  (function() {
+
+  var $imgs = $('#gallery img');                  // Store all images
+  var $buttons = $('#buttons');                   // Store buttons element
+  var tagged = {};                                // Create tagged object
+
+  $imgs.each(function() {                         // Loop through images and
+    var img = this;                               // Store img in variable
+    var tags = $(this).data('tags');              // Get this element's tags
+
+    if (tags) {                                   // If the element had tags
+      tags.split(',').forEach(function(tagName) { // Split at comma and
+
+        if (tagged[tagName] == null) {            // If object doesn't have tag
+          tagged[tagName] = [];                   // Add empty array to object
+        }
+        tagged[tagName].push(img);                // Add the image to the array
+      });
+    }
+  });
+
+  $('<button/>', {                                 // Create empty button
+    text: 'Show All',                              // Add text 'show all'
+    class: 'active',                               // Make it active
+    click: function() {                            // Add onclick handler to
+      $(this)                                      // Get the clicked on button
+        .addClass('active')                        // Add the class of active
+        .siblings()                                // Get its siblings
+        .removeClass('active');                    // Remove active from siblings
+      $imgs.hide().slideDown(500);                 // Show all images
+    }
+  }).appendTo($buttons);                           // Add to buttons
+
+  $.each(tagged, function(tagName) {               // For each tag name
+    $('<button/>', {                               // Create empty button
+      text: tagName + ' (' + tagged[tagName].length + ')', // Add tag name
+      click: function() {                          // Add click handler
+        $(this)                                    // The button clicked on
+          .addClass('active')                      // Make clicked item active
+          .siblings()                              // Get its siblings
+          .removeClass('active');                  // Remove active from siblings
+        $imgs                                      // With all of the images
+          .hide()                                  // Hide them
+          .filter(tagged[tagName])                 // Find ones with this tag
+          .fadeIn(500);                                // Show just those images
+      }
+    }).appendTo($buttons);                         // Add to the buttons
+  });
+
+}());
+
+</script>
+</html>

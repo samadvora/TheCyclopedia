@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Routes</title>
+    <link rel="stylesheet" href="css/Home.css" />
+    <link rel="stylesheet" href="css/routes.css" />
+  </head>
+  <body>
+    <svg
+      display="none"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="768"
+      height="800"
+      style="height: 20px"
+      viewBox="0 0 768 800"
+    >
+      <defs>
+        <g id="icon-close">
+          <path
+            class="path1"
+            d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"
+          ></path>
+        </g>
+      </defs>
+    </svg>
+    <nav>
+        <ul>
+          <li><a href="index.html">GALLERY</a></li>
+          <li><a href="Bikes.html">BIKES</a></li>
+          <li><a href="index.html"><h1>The<span>Cyclopedia</span></h1></a></li>
+          <li><a href="index.html">CONTACT US</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <main>
+      <div class="routesWrapper">
+        <div class="routesCard">
+          <img src="Images/QuebecRoute.jpg" alt="Pancake" />
+          <div class="routesCard__text">
+            <h1>Route Verte in Quebec</h1>
+            <div class="routesCard__text__star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>
+              Did you know that you could cross La Belle Province all by bike?
+              Quebec�s Route Verte is a bike path network that goes from one end
+              of the province to the other, making it one of the longest bike
+              trails in Canada. This scenic route is a mix of bike paths,
+              secondary roads, and an occasional highway segment, but there are
+              signs everywhere indicating to drivers that it is part of the
+              Route Verte. A popular section of this long bike trail is called
+              the Blueberry Route and it takes you in a loop around Lac
+              Saint-Jean for 256 kilometres, which typically takes three to four
+              days to complete.
+            </p>
+            <div class="routesCard__text__timing">
+              <div class="routesCard__text__timing_time">
+                <h2>Distance Covered</h2>
+                <p>4000 KM</p>
+              </div>
+              <div class="routesCard__text__timing_time">
+                <h2>Total Time</h2>
+                <p>24 days</p>
+              </div>
+              <div class="routesCard__text__timing_time">
+                <h2>Price</h2>
+                <p>$ 420</p>
+              </div>
+            </div>
+            <button
+              class="popupbtn"
+              onclick="ShowMapPopup(this)"
+              data-title="Route Verte in Quebec"
+              data-url="https://www.google.com/maps/d/embed?mid=1GLqPYC4fEdLk2pyR-h6mMLN6u9U"
+            >
+              Show in Map
+            </button>
+          </div>
+        </div>
+        <div class="routesCard">
+          <img src="Images/waterfront-trail-sign.jpg" alt="Pancake" />
+          <div class="routesCard__text">
+            <h1>Waterfront Trail in Ontario</h1>
+            <div class="routesCard__text__star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>
+              One of the ultimate bike trips in Ontario has to be the
+              Southeastern Waterfront Trail. Get some incomparable views of the
+              province�s Great Lake region.<br />
+              If you want an even longer cycling tour and don�t mind deviating
+              from the shore, there is a 1,000-kilometre route that has been
+              mapped out step-by-step that is meant to take a full 10 days. If
+              you�re really up for an adventure, the complete Great Lakes
+              Waterfront Trail is a combined 3,000-kilometres and circles along
+              the shores of the Great Lakes. These routes include paved and
+              non-paved trails.
+            </p>
+            <div class="routesCard__text__timing">
+              <div class="routesCard__text__timing_time">
+                <h2>Distance Covered</h2>
+                <p>780 KM</p>
+              </div>
+              <div class="routesCard__text__timing_time">
+                <h2>Total Time</h2>
+                <p>12 days</p>
+              </div>
+              <div class="routesCard__text__timing_time">
+                <h2>Price</h2>
+                <p>$ 220</p>
+              </div>
+            </div>
+            <button
+              class="popupbtn"
+              onclick="ShowMapPopup(this)"
+              data-title="Waterfront Trail in Ontario"
+              data-url="https://www.google.com/maps/d/embed?mid=1h2br1gCbNeKR_MxzycuFqYJq384"
+            >
+              Show in Map
+            </button>
+          </div>
+        </div>
+        <div class="routesCard">
+          <img src="Images/Nova_Scotia.jpg" alt="Pancake" />
+          <div class="routesCard__text">
+            <h1>Cabot Trail in Nova Scotia</h1>
+            <div class="routesCard__text__star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>
+              You can take an epic road trip to the Cabot Trail, but you can
+              also take your bike. The 298-kilometre paved loop goes around part
+              of Cape Breton Island. This route is not for novice bikers as
+              there are quite a few hills, but the views will definitely be
+              worth it. The entire route should take between three to five days.
+              Along the way, you will bike up through old forests as well as
+              bike down to the coastline. Cabot Trail is one of Canada�s bucket
+              list items � so why not bike it?
+            </p>
+            <div class="routesCard__text__timing">
+              <div class="routesCard__text__timing_time">
+                <h2>Distance Covered</h2>
+                <p>298 KM</p>
+              </div>
+              <div class="routesCard__text__timing_time">
+                <h2>Total Time</h2>
+                <p>5 days</p>
+              </div>
+              <div class="routesCard__text__timing_time">
+                <h2>Price</h2>
+                <p>$ 150</p>
+              </div>
+            </div>
+            <button
+              class="popupbtn"
+              onclick="ShowMapPopup(this)"
+              data-title="Cabot Trail in Nova Scotia"
+              data-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52396.12277371106!2d-60.591289020369445!3d46.3548633564346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b67a076f1d9b96f%3A0x277dcf8532102970!2sCabot%20Trail%20Rd%2C%20Nova%20Scotia%2C%20Canada!5e0!3m2!1sen!2sin!4v1629218153724!5m2!1sen!2sin"
+            >
+              Show in Map
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>The<span>Cyclopedia</span></h3>
+        <p class="footer-links">
+          <a href="#">Home.</a>
+          <a href="#">Bikes.</a>
+          <a href="#">Frame & More.</a>
+          <a href="#">Gallery</a>
+        </p>
+        <p class="footer-company-name">The Cyclopedia. &copy; 2021</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>05 Briercrest Ave</span> Ontario, Canada</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 555 555555</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:TheCyclopedia.com">TheCyclopedia.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s,
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+    <div class="routeModal">
+      <div class="routeModal-overlay routeModal-toggle"></div>
+      <div class="routeModal-wrapper routeModal-transition">
+        <div class="routeModal-header">
+          <button class="routeModal-close routeModal-toggle">
+            <svg
+              class="icon-close icon"
+              onclick="closePopup()"
+              style="height: 20px; cursor: pointer"
+              viewBox="0 0 32 32"
+            >
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="routeModal-heading" id="routeModalHeading">&nbsp;</h2>
+        </div>
+        <div class="routeModal-body">
+          <div class="routeModal-content">
+            <iframe
+              id="modelFrame"
+              src="https://www.google.com/maps/d/embed?mid=1GLqPYC4fEdLk2pyR-h6mMLN6u9U"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/routes.js"></script>
+  </body>
+</html>
