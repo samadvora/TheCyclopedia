@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Samad's Java Script Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/Home.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="Bikes.html">BIKES</a></li>
+            <li>
+                <a class="active" href="index.html">
+                    <h1>The<span>Cyclopedia</span></h1>
+                </a>
+            </li>
+            <li><a href="Contactus.html">CONTACT US</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+        </ul>
+        <hr>
+    </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Images/one.jpg" style="height:800px; width:100%" alt="First Image">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/club/cycling2.jpg" style="height:800px; width:100%" alt="Second Image">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/club/wheel1.png" style="height:800px; width:100%" alt="Third Image">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/two.jpg" style="height:800px; width:100%" alt="Fourth Image">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/club/slide2.jpg" style="height:800px; width:100%" alt="Fifth Image">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <main>
+        <div>
+            <h2 class="caption">
+                What defines us?
+            </h2>
+            <p id="lorem">
+                Bicycle along the foothills of the Appalachian Mountains and small country roads to the St. Lawrence Plains. Find trails adapted to your needs and your level, on roads or stone dust cycling trails. Between Montreal and Quebec City, on the south shore
+                of the St. Lawrence River, we welcome you to the region.
+            </p>
+        </div>
+        <div>
+            <div class="container">
+                <img class="container__image" src="Images/club/cycling3.jpg" alt="Seventh bike">
+                <div class="container__text">
+                    <h2 class="caption">TheCyclopedia Bikes</h2>
+                    <p class="block2">If you are looking for a titanium bicycle that’s custom made for your needs, versatile, hi-tech, and long-lasting, you’ve come to the right place.</p>
+                    <!-- <p class="block2" >While inside a box, cats feel that they cannot be snuck up on from behind or the side — anything that wants to approach them must come directly into their field of vision. In effect, such hiding spaces allow them to watch the world around them without being seen.</p> -->
+                    <button type="submit" class="slide-hover-left-1" onclick="redirect()">Book A Tour</button>
+                    <!-- <input class="slide-hover-left-1" type="submit" value="Slide Hover Left"> -->
+                </div>
+            </div>
+        </div>
+        <div id="gallery_home">
+            <h2 class="caption">Gallery</h2>
+            <table>
+                <tr>
+                    <th>
+
+                        <img class="ImgThumbnail" src="Images/bike1.jpg" alt="bike1">
+                        <div class="modal">
+                            <span class="close">×</span>
+                            <img class="modalImage" id="img01">
+                            <div class="caption1">It looks good and feels comfortable. Nothing more to say about this great Nua. Here are some photos that say more than a thousand words. #bikes #bikesbikesbikes #piniongearbox #pinionbike #comfortableride #titaniumcustombikes
+                                #brooks
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <img class="ImgThumbnail" src="Images/bike2.jpg" alt="bike2">
+                        <div class="modal">
+                            <span class="close">×</span>
+                            <img class="modalImage" id="img02">
+                            <div class="caption1">Little details about this Nua🚲 The Nua Ti-Handlebar with those Natural colour @brooksengland Cambium Comfort grips (cotton + rubber) is a good touch. The Nua Ti-POST Titanium with Tune seatpost clamp and #Brooks Leather #saddle
+                                in Honey brown color. @hebie_tubus_racktime Fly Classic Stainless rear rack. Each client with their tastes and needs always ends in a beautiful and different cycle #bikesbikesbikes #brookssaddle #titaniumcomponents #bespokebikes
+                                #titaniumbicycle
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img class="ImgThumbnail" src="Images/bike3.jpg" alt="bike3">
+                        <div class="modal">
+                            <span class="close">×</span>
+                            <img class="modalImage" id="img03">
+                            <div class="caption1">Piotr asked us for a custom made frameset and some #titaniumparts, a #cinqshifter for the #piniongearbox (that he already had) and some other components, so he could mount his bike by himself🔧👨🏻‍🔧 📩He has sent us some
+                                good photos📸 and tells us a bit about his experience: 📝“I want to say the bike is a beauty! In the end I think I'll change the bar tape for black and tires for something more knobby but it's a beast and I absolutely love
+                                it." ➡️To tell the truth, the finished bike is pretty cool. Don't you think?🚲👍🏻 #customframeset #titaniumframeset #titaniumbikes #bikesbikesbikes #bicycle
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <img class="ImgThumbnail" src="Images/bike4.jpg" alt="bike4">
+                        <div class="modal">
+                            <span class="close">×</span>
+                            <img class="modalImage" id="img04">
+                            <div class="caption1">Gareth was looking for a #bike🚲 with a #comfortableriding position, so we went to work 👨🏻‍🔧 to get him the correct #geometry on his #frame. And here ⬆️ are the results, a great bike for a comfortable ride #bikesbikesbikes
+                                #framegeometry #bespokeframes #bespokebicycles #bespoketailoring #titaniumbicycle #piniongearbox #pinionbike #comfortableride
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img class="ImgThumbnail" src="Images/bike5.jpg" alt="bike5">
+                        <div class="modal">
+                            <span class="close">×</span>
+                            <img class="modalImage" id="img05">
+                            <div class="caption1">When we were quite advanced with the project, Thomas wrote to us telling that he had bought a pair of @hopetech brake rotors with a red spider and red bolts, and red tubeless valves from @chriskingbuzz, thinking of including
+                                them in the project. So he sent us the stuff to mount it on the bike, becoming the icing on the cake. 🍰🍒 That's all about this bike, for now. ➡️Soon you can see it on our blog, stay tuned.⬅️ #bikesbikesbikes #brakerotor
+                                #bike #bicycledesign #bicyclelife #titaniumbike
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <img class="ImgThumbnail" src="Images/bike6.jpg" alt="bike6" height="400">
+                        <div class="modal">
+                            <span class="close">×</span>
+                            <img class="modalImage" id="img06">
+                            <div class="caption1">
+                                Thomas wanted some components out of our standard offer, like Magura MT5 brakes @magura_bicycle (tuned with 1- Finger HC levers and the red 🔴 piston rings), a wonderful @hebie_tubus_rack Wingee mudguards with integrated rear rack, a side kickstand (for
+                                which we’ve included a support in the frame) and an extra rear axle to carry a kid trailer (@robertaxleproject Axle KID214)🚲 ➡️ We still have a few more things to show you about this bike🚴🏻, stay tuned⬅️ #bikesbikesbikes
+                                #redhub #bikeswithoutlimits #bicycle #bicycledesign #bicyclelife #titaniumbike #bespokebicycles
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        
+        <h2 class="caption">Upcoming Events</h2>
+        <!--testimonial three -->
+        <div class="animation-element slide-right testimonial">
+            <div class="container">
+                <img class="container__image" src="Images/Event1.jpg" alt="Seventh bike">
+                <div class="container__text">
+                    <h2 class="caption">Event Details</h2>
+                    <p class="block2">19/08/2021 - 22/08/2021</p>
+                    <p class="block2">LOCATION: Dieppe, NB</p>
+                    <p class="block2">DISCIPLINE: Mountain Bike</p>
+                    <p class="block2">ORGANIZER: Directeur Sportif / Centre de cyclisme de Dieppe</p>
+                </div>
+            </div>
+            <div class="container">
+                <img class="container__image" src="Images/Event2.jpg" alt="Seventh bike">
+                <div class="container__text">
+                    <h2 class="caption">Event Details</h2>
+                    <p class="block2">28/08/2021 - 29/08/2021</p>
+                    <p class="block2">LOCATION:Calgary, AB</p>
+                    <p class="block2">DISCIPLINE: BMX</p>
+                    <p class="block2">ORGANIZER: Calgary BMX</p>
+                </div>
+            </div>
+        </div>
+        <!--testimonial three -->
+        <section>
+            <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="Scriptcontent">
+                        <div class="carrousel">
+                            <h2 class="caption">Customer feedback</h2>
+                            <input type="radio" name="slides" id="radio-1" checked>
+                            <input type="radio" name="slides" id="radio-2">
+                            <input type="radio" name="slides" id="radio-3">
+                            <input type="radio" name="slides" id="radio-4">
+                            <ul class="slides">
+                                <li class="slide">
+                                    <p>
+                                        <q>My bike arrived very well packed and undamaged on Monday.<br>The buildup was very easy and fast done due to the pre marked parts. It was a dream come true moment when I recieved it</q>
+                                        <span class="author">
+                                 <img src="Images/p4.jpeg" alt="Client1">
+                                 SR SIMON
+                                 </span>
+                                    </p>
+                                </li>
+                                <li class="slide">
+                                    <p><q>It's something I had been wanting to do for a while but it's one thing to have the specs on paper and quite another to have it all integrated into a working bike.</q>
+                                        <span class="author">
+                                 <img src="Images/p3.jpeg" alt="Client2">
+                                 MICHEL
+                                 </span>
+                                    </p>
+                                </li>
+                                <li class="slide">
+                                    <p><q>The bicycle is a pure piece of art. It's absolutely stunning. I'm surprised<br>to say that it actually looks even better in person than it does in the photos</q>
+                                        <span class="author">
+                                 <img src="Images/p1.jpeg" alt="Client3">
+                                 Willimson
+                                 </span>
+                                    </p>
+                                </li>
+                                <li class="slide">
+                                    <p><q>Thank you very much for a fantastic bike. It's beautiful and a very smooth ride. Seeing the design I envisioned was enthralling. The cyclopedia made my dream companion come alive</q>
+                                        <span class="author">
+                                 <img src="Images/p2.jpeg" alt="Client4">
+                                 HARRIS
+                                 </span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="slidesNavigation">
+                                <label for="radio-1" id="dotForRadio-1"></label>
+                                <label for="radio-2" id="dotForRadio-2"></label>
+                                <label for="radio-3" id="dotForRadio-3"></label>
+                                <label for="radio-4" id="dotForRadio-4"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>The<span>Cyclopedia</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a> ·
+                <a href="#">Bikes</a> ·
+                <a href="#">Frame & More</a> ·
+                <a href="#">Gallery</a>
+            </p>
+            <p class="footer-company-name">The Cyclopedia. &copy; 2021</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>05 Briercrest Ave</span> Ontario, Canada</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 555555</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:TheCyclopedia.com">TheCyclopedia.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+
+
+        function redirect() {
+            location.href = "events.html";
+        }
+        var modalEle = document.querySelector(".modal");
+        var modalImage = document.querySelector(".modalImage");
+        let wow;
+        Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+            item.addEventListener("click", event => {
+                modalEle.style.display = "block";
+                modalImage.src = event.target.src;
+            });
+        })
+        document.querySelector(".close").addEventListener('click', () => {
+            modalEle.style.display = "none";
+        })
+        var $animation_elements = $('.animation-element');
+        var $window = $(window);
+
+        function check_if_in_view() {
+            var window_height = $window.height();
+            var window_top_position = $window.scrollTop();
+            var window_bottom_position = (window_top_position + window_height);
+
+            $.each($animation_elements, function() {
+                var $element = $(this);
+                var element_height = $element.outerHeight();
+                var element_top_position = $element.offset().top;
+                var element_bottom_position = (element_top_position + element_height);
+
+                //check to see if this current container is within viewport
+                if ((element_bottom_position >= window_top_position) &&
+                    (element_top_position <= window_bottom_position)) {
+                    $element.addClass('in-view');
+                } else {
+                    $element.removeClass('in-view');
+                }
+            });
+        }
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+    </script>
+</body>
+
+</html>
